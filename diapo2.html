@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .d1 {
+        width: 3840px;
+        height: 720px;
+        background-color: #ededed;
+        background: url("img/photo_2023-04-20_06-42-01.jpg");
+        background-size: contain;
+        animation: defilement1 12s linear infinite;
+      }
+
+      .conteneur1 {
+        overflow: hidden;
+        max-width: 960px;
+        margin: 50px auto;
+        box-shadow: 0px 15px 10px -5px #777;
+      }
+      @keyframes defilement1 {
+        0% {
+          transform: translate(0, 0);
+        }
+        100% {
+          transform: translate(-2880px, 0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="conteneur1">
+      <div class="d1"></div>
+    </div>
+    <div class="conteneur2">
+      <div class="d2"></div>
+    </div>
+  </body>
+</html>
